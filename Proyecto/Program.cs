@@ -18,7 +18,8 @@ namespace Proyecto
 
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());
-            //comentario    
+            //comentario 
+            // comentario de stock
         }
     }
 }
