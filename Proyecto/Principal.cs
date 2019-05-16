@@ -16,5 +16,10 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            //adf
+        }
     }
 }
