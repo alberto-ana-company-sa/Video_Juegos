@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Compras
+    partial class AcercaDe
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblAcercaDe = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblAcercaDe
+            // 
+            this.lblAcercaDe.AutoSize = true;
+            this.lblAcercaDe.Location = new System.Drawing.Point(207, 197);
+            this.lblAcercaDe.Name = "lblAcercaDe";
+            this.lblAcercaDe.Size = new System.Drawing.Size(375, 13);
+            this.lblAcercaDe.TabIndex = 0;
+            this.lblAcercaDe.Text = "APLICACIÓN CREADA POR ALBERTO QUIROGA Y ANABEL CARNERERO";
+            // 
+            // AcercaDe
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Compras";
+            this.Controls.Add(this.lblAcercaDe);
+            this.Name = "AcercaDe";
+            this.Text = "Acerca de...";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblAcercaDe;
     }
 }
