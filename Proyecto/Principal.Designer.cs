@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,12 +44,16 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnCompras = new System.Windows.Forms.ToolStripButton();
+            this.btnVentas = new System.Windows.Forms.ToolStripButton();
+            this.btnStock = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,19 +116,19 @@
             // comprasToolStripMenuItem1
             // 
             this.comprasToolStripMenuItem1.Name = "comprasToolStripMenuItem1";
-            this.comprasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.comprasToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.comprasToolStripMenuItem1.Text = "Compras";
             // 
             // ventasToolStripMenuItem1
             // 
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.ventasToolStripMenuItem1.Text = "Ventas";
             // 
             // stockToolStripMenuItem1
             // 
             this.stockToolStripMenuItem1.Name = "stockToolStripMenuItem1";
-            this.stockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.stockToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.stockToolStripMenuItem1.Text = "Stock";
             // 
             // estadísticasToolStripMenuItem
@@ -152,11 +157,50 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnCompras,
+            this.btnVentas,
+            this.btnStock});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 49);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnCompras
+            // 
+            this.btnCompras.AutoSize = false;
+            this.btnCompras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCompras.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnCompras.Image")));
+            this.btnCompras.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(46, 46);
+            this.btnCompras.Text = "toolStripButton1";
+            this.btnCompras.Click += new System.EventHandler(this.BtnCompras_Click);
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.AutoSize = false;
+            this.btnVentas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
+            this.btnVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(46, 46);
+            this.btnVentas.Text = "toolStripButton2";
+            this.btnVentas.Click += new System.EventHandler(this.BtnVentas_Click);
+            // 
+            // btnStock
+            // 
+            this.btnStock.AutoSize = false;
+            this.btnStock.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnStock.Image = ((System.Drawing.Image)(resources.GetObject("btnStock.Image")));
+            this.btnStock.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(46, 46);
+            this.btnStock.Text = "toolStripButton3";
+            this.btnStock.Click += new System.EventHandler(this.BtnStock_Click);
             // 
             // statusStrip1
             // 
@@ -207,6 +251,8 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Principal
@@ -224,6 +270,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -252,6 +300,9 @@
         private System.Windows.Forms.ToolStripStatusLabel tsFecha;
         private System.Windows.Forms.ToolStripStatusLabel tsHora;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripButton btnCompras;
+        private System.Windows.Forms.ToolStripButton btnVentas;
+        private System.Windows.Forms.ToolStripButton btnStock;
     }
 }
 

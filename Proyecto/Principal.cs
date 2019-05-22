@@ -131,5 +131,37 @@ namespace Proyecto
         {
             //Esto hay que borrarlo jej
         }
+
+        private void BtnCompras_Click(object sender, EventArgs e)
+        {
+            /* BOTÓN DE LA BARRA DE HERRAMIENTAS, CUANDO SE PULSE
+             * ACCEDERÁ A LAS OPCIONES DEL MENU, EN ESTE CASO A LA
+             * OPCIÓN DE COMPRAS.
+             * TAMAÑO 46 X 46, GRACIAS A LA OPCIÓN DE AUTOSIZE A 
+             * FALSE, TANTO EN EL BOTÓN COMO EN LA BARRA DE HERRAMIENAS
+             * LA IMAGEN SE HA PUESTO A TRAVÉS DE LA PROPIEDAD BACKGROUNDIMAGE
+             * Y LA PROPIEDAD BACKGROUNDIMAGELAYOUT A CENTER. */
+
+            /* PARA PODER INVOCAR AL EVENTO CLICK DE CUALQUIER COMPONENTE SE PUEDE
+            * CONSEGUIR CON EL METODO PERFORMCLICK, DADO QUE EN LA OPCION DEL MENU
+            * YA CODIFICAMOS TODO EL PROCESO, CON INVOCARLO AHORA YA ES SUFICIENTE*/
+
+            comprasToolStripMenuItem.PerformClick();
+
+            /* Llamamos a un método (evento) creado anteriormente en el código,
+             * hacemos referencia al metodo en el que llamamos a la Ventana 
+             * Compras para que se muestre en nuestra Ventana Principal */
+
+        }
+
+        private void BtnVentas_Click(object sender, EventArgs e)
+        {
+            ventasToolStripMenuItem.PerformClick();
+        }
+
+        private void BtnStock_Click(object sender, EventArgs e)
+        {
+            stockToolStripMenuItem.PerformClick();
+        }
     }
 }
