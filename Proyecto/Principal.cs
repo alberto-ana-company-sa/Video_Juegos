@@ -22,5 +22,6 @@ namespace Proyecto
             tsFecha.Text = DateTime.Today.ToLongDateString();
             tsHora.Text = DateTime.Now.ToLongTimeString();
         }
+        /* hola amigos*/
     }
 }
