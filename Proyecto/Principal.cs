@@ -127,6 +127,27 @@ namespace Proyecto
             }
         }
 
+        private void AyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool estaAbierta = false;
+
+            foreach (Form v in Application.OpenForms)
+            {
+                if (v.Text == "Ayuda")
+                {
+                    estaAbierta = true;
+                }
+            }
+
+            if (!estaAbierta)
+            {
+                Ayuda vAyuda = new Ayuda();
+
+                vAyuda.MdiParent = this;
+                vAyuda.Show();
+            }
+        }
+
         private void FiltrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Esto hay que borrarlo jej
@@ -163,5 +184,7 @@ namespace Proyecto
         {
             stockToolStripMenuItem.PerformClick();
         }
+
+        
     }
 }
