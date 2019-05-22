@@ -19,7 +19,7 @@ namespace Proyecto
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            //adf
+            //adfsdsdssds
         }
     }
 }
