@@ -126,5 +126,10 @@ namespace Proyecto
                 vAcercaDe.Show();
             }
         }
+
+        private void FiltrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Esto hay que borrarlo jej
+        }
     }
 }
