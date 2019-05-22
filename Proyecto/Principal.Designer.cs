@@ -52,6 +52,9 @@
             this.tsFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.comprasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -133,6 +136,10 @@
             // 
             // estadísticasToolStripMenuItem
             // 
+            this.estadísticasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.comprasToolStripMenuItem2,
+            this.ventasToolStripMenuItem2,
+            this.stockToolStripMenuItem2});
             this.estadísticasToolStripMenuItem.Name = "estadísticasToolStripMenuItem";
             this.estadísticasToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.estadísticasToolStripMenuItem.Text = "&Estadísticas";
@@ -256,6 +263,24 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // comprasToolStripMenuItem2
+            // 
+            this.comprasToolStripMenuItem2.Name = "comprasToolStripMenuItem2";
+            this.comprasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.comprasToolStripMenuItem2.Text = "Compras";
+            // 
+            // ventasToolStripMenuItem2
+            // 
+            this.ventasToolStripMenuItem2.Name = "ventasToolStripMenuItem2";
+            this.ventasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem2.Text = "Ventas";
+            // 
+            // stockToolStripMenuItem2
+            // 
+            this.stockToolStripMenuItem2.Name = "stockToolStripMenuItem2";
+            this.stockToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.stockToolStripMenuItem2.Text = "Stock";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +329,9 @@
         private System.Windows.Forms.ToolStripButton btnCompras;
         private System.Windows.Forms.ToolStripButton btnVentas;
         private System.Windows.Forms.ToolStripButton btnStock;
+        private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem2;
     }
 }
 
