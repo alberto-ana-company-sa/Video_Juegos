@@ -17,12 +17,10 @@ namespace Proyecto
             InitializeComponent();
         }
 
-        private void Principal_Load(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            //adfsdsdssds
-            //55555555555555555
-            //12311223
-            //1234567898765432346789
+            tsFecha.Text = DateTime.Today.ToLongDateString();
+            tsHora.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }
