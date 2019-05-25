@@ -134,12 +134,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Stock.resx">
-      <DependentUpon>Stock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventas.resx">
-      <DependentUpon>Ventas.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="DBaseDeDatos.xsc">
       <DependentUpon>DBaseDeDatos.xsd</DependentUpon>
     </None>
