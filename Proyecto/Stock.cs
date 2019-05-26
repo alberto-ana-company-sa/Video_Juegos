@@ -16,5 +16,20 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void StockBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.stockBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dBaseDeDatos);
+
+        }
+
+        private void Stock_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dBaseDeDatos.Stock' Puede moverla o quitarla según sea necesario.
+            this.stockTableAdapter.Fill(this.dBaseDeDatos.Stock);
+
+        }
     }
 }
