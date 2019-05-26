@@ -74,14 +74,14 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             idProveedorLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // idProveedorLabel
@@ -447,73 +447,73 @@
             this.dataGridViewTextBoxColumn16.HeaderText = "IdProveedor";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
-            // comprasDataGridView1
+            // comprasDataGridView
             // 
-            this.comprasDataGridView1.AutoGenerateColumns = false;
-            this.comprasDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.comprasDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23});
-            this.comprasDataGridView1.DataSource = this.comprasBindingSource;
-            this.comprasDataGridView1.Location = new System.Drawing.Point(220, 45);
-            this.comprasDataGridView1.Name = "comprasDataGridView1";
-            this.comprasDataGridView1.Size = new System.Drawing.Size(750, 117);
-            this.comprasDataGridView1.TabIndex = 32;
+            this.comprasDataGridView.AutoGenerateColumns = false;
+            this.comprasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.comprasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.comprasDataGridView.DataSource = this.comprasBindingSource;
+            this.comprasDataGridView.Location = new System.Drawing.Point(226, 48);
+            this.comprasDataGridView.Name = "comprasDataGridView";
+            this.comprasDataGridView.Size = new System.Drawing.Size(743, 91);
+            this.comprasDataGridView.TabIndex = 32;
             // 
-            // dataGridViewTextBoxColumn17
+            // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "IdCompras";
-            this.dataGridViewTextBoxColumn17.HeaderText = "IdCompras";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCompras";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdCompras";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn18
+            // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "FechaPago";
-            this.dataGridViewTextBoxColumn18.HeaderText = "FechaPago";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "FechaPago";
+            this.dataGridViewTextBoxColumn2.HeaderText = "FechaPago";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridViewTextBoxColumn19
+            // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "TipoPago";
-            this.dataGridViewTextBoxColumn19.HeaderText = "TipoPago";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TipoPago";
+            this.dataGridViewTextBoxColumn3.HeaderText = "TipoPago";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // dataGridViewTextBoxColumn20
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "PlazoPago";
-            this.dataGridViewTextBoxColumn20.HeaderText = "PlazoPago";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PlazoPago";
+            this.dataGridViewTextBoxColumn4.HeaderText = "PlazoPago";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // dataGridViewTextBoxColumn21
+            // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Descuento";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Descuento";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Descuento";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Descuento";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // dataGridViewTextBoxColumn22
+            // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "IdProveedor";
-            this.dataGridViewTextBoxColumn22.HeaderText = "IdProveedor";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "IdProveedor";
+            this.dataGridViewTextBoxColumn6.HeaderText = "IdProveedor";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // dataGridViewTextBoxColumn23
+            // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "IdArticulo";
-            this.dataGridViewTextBoxColumn23.HeaderText = "IdArticulo";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "IdArticulo";
+            this.dataGridViewTextBoxColumn7.HeaderText = "IdArticulo";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 594);
-            this.Controls.Add(this.comprasDataGridView1);
+            this.Controls.Add(this.comprasDataGridView);
             this.Controls.Add(this.stockDataGridView);
             this.Controls.Add(idProveedorLabel);
             this.Controls.Add(this.idProveedorTextBox);
@@ -540,7 +540,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comprasDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,13 +586,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridView comprasDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridView comprasDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }
