@@ -185,6 +185,25 @@ namespace Proyecto
             stockToolStripMenuItem.PerformClick();
         }
 
-        
+        private void ComprasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            bool estaAbierta = false;
+
+            foreach (Form v in Application.OpenForms)
+            {
+                if (v.Text == "FiltroCompras")
+                {
+                    estaAbierta = true;
+                }
+            }
+
+            if (!estaAbierta)
+            {
+                FiltroCompras vFiltroCompras = new FiltroCompras();
+
+                vFiltroCompras.MdiParent = this;
+                vFiltroCompras.Show();
+            }
+        }
     }
 }
