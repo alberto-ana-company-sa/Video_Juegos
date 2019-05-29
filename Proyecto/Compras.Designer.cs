@@ -102,7 +102,7 @@
             // idProveedorLabel
             // 
             idProveedorLabel.AutoSize = true;
-            idProveedorLabel.Location = new System.Drawing.Point(21, 48);
+            idProveedorLabel.Location = new System.Drawing.Point(77, 71);
             idProveedorLabel.Name = "idProveedorLabel";
             idProveedorLabel.Size = new System.Drawing.Size(71, 13);
             idProveedorLabel.TabIndex = 1;
@@ -111,7 +111,7 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(21, 74);
+            nombreLabel.Location = new System.Drawing.Point(77, 97);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(47, 13);
             nombreLabel.TabIndex = 3;
@@ -120,7 +120,7 @@
             // direccionLabel
             // 
             direccionLabel.AutoSize = true;
-            direccionLabel.Location = new System.Drawing.Point(21, 100);
+            direccionLabel.Location = new System.Drawing.Point(77, 123);
             direccionLabel.Name = "direccionLabel";
             direccionLabel.Size = new System.Drawing.Size(55, 13);
             direccionLabel.TabIndex = 5;
@@ -129,7 +129,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(21, 126);
+            emailLabel.Location = new System.Drawing.Point(77, 149);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 7;
@@ -138,7 +138,7 @@
             // paginaWebLabel
             // 
             paginaWebLabel.AutoSize = true;
-            paginaWebLabel.Location = new System.Drawing.Point(21, 152);
+            paginaWebLabel.Location = new System.Drawing.Point(77, 175);
             paginaWebLabel.Name = "paginaWebLabel";
             paginaWebLabel.Size = new System.Drawing.Size(69, 13);
             paginaWebLabel.TabIndex = 9;
@@ -147,7 +147,7 @@
             // telefonoLabel
             // 
             telefonoLabel.AutoSize = true;
-            telefonoLabel.Location = new System.Drawing.Point(21, 178);
+            telefonoLabel.Location = new System.Drawing.Point(77, 201);
             telefonoLabel.Name = "telefonoLabel";
             telefonoLabel.Size = new System.Drawing.Size(52, 13);
             telefonoLabel.TabIndex = 11;
@@ -179,7 +179,7 @@
             this.proveedoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.proveedoresBindingNavigator.Name = "proveedoresBindingNavigator";
             this.proveedoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.proveedoresBindingNavigator.Size = new System.Drawing.Size(1370, 25);
+            this.proveedoresBindingNavigator.Size = new System.Drawing.Size(1143, 25);
             this.proveedoresBindingNavigator.TabIndex = 0;
             this.proveedoresBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -300,7 +300,7 @@
             // idProveedorTextBox
             // 
             this.idProveedorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "IdProveedor", true));
-            this.idProveedorTextBox.Location = new System.Drawing.Point(98, 45);
+            this.idProveedorTextBox.Location = new System.Drawing.Point(154, 68);
             this.idProveedorTextBox.Name = "idProveedorTextBox";
             this.idProveedorTextBox.Size = new System.Drawing.Size(100, 20);
             this.idProveedorTextBox.TabIndex = 2;
@@ -308,7 +308,7 @@
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(98, 71);
+            this.nombreTextBox.Location = new System.Drawing.Point(154, 94);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
             this.nombreTextBox.TabIndex = 4;
@@ -316,7 +316,7 @@
             // direccionTextBox
             // 
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "Direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(98, 97);
+            this.direccionTextBox.Location = new System.Drawing.Point(154, 120);
             this.direccionTextBox.Name = "direccionTextBox";
             this.direccionTextBox.Size = new System.Drawing.Size(100, 20);
             this.direccionTextBox.TabIndex = 6;
@@ -324,7 +324,7 @@
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(98, 126);
+            this.emailTextBox.Location = new System.Drawing.Point(154, 149);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(100, 20);
             this.emailTextBox.TabIndex = 8;
@@ -332,7 +332,7 @@
             // paginaWebTextBox
             // 
             this.paginaWebTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "PaginaWeb", true));
-            this.paginaWebTextBox.Location = new System.Drawing.Point(98, 149);
+            this.paginaWebTextBox.Location = new System.Drawing.Point(154, 172);
             this.paginaWebTextBox.Name = "paginaWebTextBox";
             this.paginaWebTextBox.Size = new System.Drawing.Size(100, 20);
             this.paginaWebTextBox.TabIndex = 10;
@@ -340,7 +340,7 @@
             // telefonoTextBox
             // 
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "Telefono", true));
-            this.telefonoTextBox.Location = new System.Drawing.Point(98, 175);
+            this.telefonoTextBox.Location = new System.Drawing.Point(154, 198);
             this.telefonoTextBox.Name = "telefonoTextBox";
             this.telefonoTextBox.Size = new System.Drawing.Size(100, 20);
             this.telefonoTextBox.TabIndex = 12;
@@ -387,7 +387,7 @@
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
             this.stockDataGridView.DataSource = this.stockBindingSource1;
-            this.stockDataGridView.Location = new System.Drawing.Point(0, 201);
+            this.stockDataGridView.Location = new System.Drawing.Point(80, 271);
             this.stockDataGridView.Name = "stockDataGridView";
             this.stockDataGridView.Size = new System.Drawing.Size(954, 209);
             this.stockDataGridView.TabIndex = 32;
@@ -460,7 +460,7 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.comprasDataGridView.DataSource = this.comprasBindingSource;
-            this.comprasDataGridView.Location = new System.Drawing.Point(226, 48);
+            this.comprasDataGridView.Location = new System.Drawing.Point(322, 71);
             this.comprasDataGridView.Name = "comprasDataGridView";
             this.comprasDataGridView.Size = new System.Drawing.Size(743, 91);
             this.comprasDataGridView.TabIndex = 32;
@@ -512,7 +512,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 594);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1143, 519);
             this.Controls.Add(this.comprasDataGridView);
             this.Controls.Add(this.stockDataGridView);
             this.Controls.Add(idProveedorLabel);
@@ -530,6 +532,7 @@
             this.Controls.Add(this.proveedoresBindingNavigator);
             this.Name = "Compras";
             this.Text = "Compras";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Compras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingNavigator)).EndInit();
             this.proveedoresBindingNavigator.ResumeLayout(false);

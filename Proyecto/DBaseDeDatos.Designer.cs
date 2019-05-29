@@ -5228,12 +5228,33 @@ SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Bene
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Benef" +
                 "icio, Unidades, TipoArticulo, IdProveedor FROM dbo.Stock";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Benef" +
+                "icio, Unidades, TipoArticulo, IdProveedor \r\nFROM dbo.Stock\r\nWHERE Unidades>=@Uni" +
+                "dades";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Unidades", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Unidades", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Benef" +
+                "icio, Unidades, TipoArticulo, IdProveedor \r\nFROM dbo.Stock\r\nWHERE PrecioCoste>=@" +
+                "PrecioCoste";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrecioCoste", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "PrecioCoste", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Benef" +
+                "icio, Unidades, TipoArticulo, IdProveedor \r\nFROM dbo.Stock\r\nWHERE IdArticulo=@Id" +
+                "Articulo";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdArticulo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdArticulo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5255,6 +5276,104 @@ SELECT IdArticulo, NombreArticulo, [Modelo ], Caracteristicas, PrecioCoste, Bene
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DBaseDeDatos.StockDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DBaseDeDatos.StockDataTable dataTable = new DBaseDeDatos.StockDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(DBaseDeDatos.StockDataTable dataTable, global::System.Nullable<int> Unidades) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Unidades.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Unidades.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DBaseDeDatos.StockDataTable ConsultaUnidades(global::System.Nullable<int> Unidades) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Unidades.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Unidades.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            DBaseDeDatos.StockDataTable dataTable = new DBaseDeDatos.StockDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy1(DBaseDeDatos.StockDataTable dataTable, global::System.Nullable<int> PrecioCoste) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((PrecioCoste.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PrecioCoste.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DBaseDeDatos.StockDataTable ConsultaPrecioCoste(global::System.Nullable<int> PrecioCoste) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((PrecioCoste.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PrecioCoste.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            DBaseDeDatos.StockDataTable dataTable = new DBaseDeDatos.StockDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy2(DBaseDeDatos.StockDataTable dataTable, int IdArticulo) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(IdArticulo));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DBaseDeDatos.StockDataTable ConsultaIdArticulo(int IdArticulo) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(IdArticulo));
             DBaseDeDatos.StockDataTable dataTable = new DBaseDeDatos.StockDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

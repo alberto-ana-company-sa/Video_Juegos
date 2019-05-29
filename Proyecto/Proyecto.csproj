@@ -96,6 +96,12 @@
     <Compile Include="FiltroCompras.Designer.cs">
       <DependentUpon>FiltroCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="FiltrosStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltrosStock.Designer.cs">
+      <DependentUpon>FiltrosStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroCompras.resx">
       <DependentUpon>FiltroCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltrosStock.resx">
+      <DependentUpon>FiltrosStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

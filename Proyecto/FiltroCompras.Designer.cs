@@ -150,6 +150,7 @@
             this.Controls.Add(this.btnFechaPago);
             this.Name = "FiltroCompras";
             this.Text = "FiltroCompras";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilltrosCompras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
