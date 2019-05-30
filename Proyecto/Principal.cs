@@ -247,5 +247,47 @@ namespace Proyecto
                 vFiltrosVentas.Show();
             }
         }
+
+        private void ComprasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            bool estaAbierta = false;
+
+            foreach (Form v in Application.OpenForms)
+            {
+                if (v.Text == "EstadisticasCompras")
+                {
+                    estaAbierta = true;
+                }
+            }
+
+            if (!estaAbierta)
+            {
+                EstadisticasCompras vEstadisticasCompras = new EstadisticasCompras();
+
+                vEstadisticasCompras.MdiParent = this;
+                vEstadisticasCompras.Show();
+            }
+        }
+
+        private void StockToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            bool estaAbierta = false;
+
+            foreach (Form v in Application.OpenForms)
+            {
+                if (v.Text == "EstadisticasStock")
+                {
+                    estaAbierta = true;
+                }
+            }
+
+            if (!estaAbierta)
+            {
+                EstadisticasStock vEstadisticasStock = new EstadisticasStock();
+
+                vEstadisticasStock.MdiParent = this;
+                vEstadisticasStock.Show();
+            }
+        }
     }
 }

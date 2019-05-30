@@ -57,5 +57,15 @@ namespace Proyecto
 
             dgvFilltrosCompras.DataSource = tabla;
         }
+
+        private void TxtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblFech_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
