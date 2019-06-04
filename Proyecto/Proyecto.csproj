@@ -85,6 +85,9 @@
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBaseDeDatos.cs">
+      <DependentUpon>DBaseDeDatos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBaseDeDatos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +104,12 @@
     </Compile>
     <Compile Include="EstadisticasStock.Designer.cs">
       <DependentUpon>EstadisticasStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstadisticasVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticasVentas.Designer.cs">
+      <DependentUpon>EstadisticasVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FiltroCompras.cs">
       <SubType>Form</SubType>
@@ -157,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EstadisticasStock.resx">
       <DependentUpon>EstadisticasStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadisticasVentas.resx">
+      <DependentUpon>EstadisticasVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroCompras.resx">
       <DependentUpon>FiltroCompras.cs</DependentUpon>

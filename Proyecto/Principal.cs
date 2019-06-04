@@ -289,5 +289,26 @@ namespace Proyecto
                 vEstadisticasStock.Show();
             }
         }
+
+        private void ventasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            bool estaAbierta = false;
+
+            foreach (Form v in Application.OpenForms)
+            {
+                if (v.Text == "EstadisticasVentas")
+                {
+                    estaAbierta = true;
+                }
+            }
+
+            if (!estaAbierta)
+            {
+                EstadisticasVentas vEstadisticasVentas = new EstadisticasVentas();
+
+                vEstadisticasVentas.MdiParent = this;
+                vEstadisticasVentas.Show();
+            }
+        }
     }
 }

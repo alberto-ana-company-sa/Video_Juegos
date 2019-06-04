@@ -45,6 +45,7 @@
             this.lblArt.Size = new System.Drawing.Size(237, 17);
             this.lblArt.TabIndex = 19;
             this.lblArt.Text = "INTRODUZCA ARTICULO VENDIDO";
+            this.lblArt.Click += new System.EventHandler(this.lblArt_Click);
             // 
             // txtArt
             // 
@@ -53,6 +54,7 @@
             this.txtArt.Name = "txtArt";
             this.txtArt.Size = new System.Drawing.Size(239, 22);
             this.txtArt.TabIndex = 18;
+            this.txtArt.TextChanged += new System.EventHandler(this.txtArt_TextChanged);
             // 
             // btnArt
             // 
@@ -74,6 +76,7 @@
             this.dgvEstadisticasStock.RowTemplate.Height = 24;
             this.dgvEstadisticasStock.Size = new System.Drawing.Size(762, 255);
             this.dgvEstadisticasStock.TabIndex = 20;
+            this.dgvEstadisticasStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstadisticasStock_CellContentClick);
             // 
             // EstadisticasStock
             // 

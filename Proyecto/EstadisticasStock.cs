@@ -52,5 +52,20 @@ namespace Proyecto
             /* SUM(PrecioCoste) "Suma Precio Coste", AVG(PrecioCoste) "Media Precio Coste", SUM(dbo.Ventas.PrecioVenta) "Suma Precio Ventas", AVG(dbo.Ventas.PrecioVenta) "Media Precio Ventas", 
               */
         }
+
+        private void lblArt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtArt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvEstadisticasStock_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
